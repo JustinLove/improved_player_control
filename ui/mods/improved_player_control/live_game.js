@@ -14,4 +14,6 @@ model.playerControlFlags.subscribe(function(flags) {
     api.panels.devmode && api.panels.devmode.message('improved_player_control_colors', style)
     api.panels.sandbox && api.panels.sandbox.message('improved_player_control_colors', style)
   }
+
+  api.Panel.message('', 'inputmap.reload');
 })

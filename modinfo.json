@@ -10,6 +10,9 @@
   "identifier": "com.wondible.pa.improved_player_control",
   "priority": 100,
   "scenes": {
+    "global_mod_list": [
+      "coui://ui/mods/improved_player_control/keybinds.js"
+    ],
     "live_game": [
       "coui://ui/mods/improved_player_control/live_game.js"
     ],

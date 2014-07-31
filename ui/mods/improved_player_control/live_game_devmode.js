@@ -6,4 +6,6 @@
   handlers.improved_player_control_colors = function(colors) {
     $('.container').css(colors)
   }
+
+  handlers.improved_player_control_change = model.updatePlayerControlFlag
 })()
