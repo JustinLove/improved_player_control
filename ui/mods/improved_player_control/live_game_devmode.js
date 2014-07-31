@@ -1,6 +1,19 @@
 (function() {
-  // current state appears to be pre-ko-foreach
+  model.updatePlayerControlNext = function() {
+    var index = model.playerControlFlags().indexOf(true)
+    console.log(index)
 
+    index += 1
+    if (index >= model.playerControlFlags().length) {
+      index = 0
+    }
+
+    console.log(index)
+    model.updatePlayerControlFlag(index)
+  }
+
+
+  // current state appears to be pre-ko-foreach
   $('tr:nth-child(2)').attr('data-bind', 'click: function () { $parent.updatePlayerControlFlag($index()); }')
 
   handlers.improved_player_control_colors = function(colors) {
@@ -8,4 +21,5 @@
   }
 
   handlers.improved_player_control_change = model.updatePlayerControlFlag
+  handlers.improved_player_control_next = model.updatePlayerControlNext
 })()
