@@ -6,7 +6,7 @@
   "date": "2014/07/31",
   "description": "Provide larger hitboxes for switching players, keybinds, and better indication of the selected player.",
   "display_name": "Improved Player Control",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/rel-improved-player-control.62472/",
   "identifier": "com.wondible.pa.improved_player_control",
   "priority": 100,
   "scenes": {
@@ -24,6 +24,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
 
