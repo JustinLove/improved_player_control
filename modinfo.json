@@ -1,0 +1,20 @@
+{
+  "author": "wondible",
+  "build": "69721",
+  "category": ["sandbox", "ui"],
+  "context": "client",
+  "date": "2014/07/31",
+  "description": "Provide larger hitboxes for switching players, keybinds, and better indication of the selected player.",
+  "display_name": "Improved Player Control",
+  "forum": null,
+  "identifier": "com.wondible.pa.improved_player_control",
+  "priority": 100,
+  "scenes": {
+    "live_game_devmode": [
+      "coui://ui/mods/improved_player_control/live_game_devmode.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
