@@ -12,9 +12,15 @@
     model.updatePlayerControlFlag(index)
   }
 
+  model.htmlColor = function(color) {
+    console.log(color)
+    return 'rgb(' + Math.floor(color[0]) + ',' + Math.floor(color[1]) + ',' + Math.floor(color[2]) + ')';
+  }
 
   // current state appears to be pre-ko-foreach
   $('tr:nth-child(2)').attr('data-bind', 'click: function () { $parent.updatePlayerControlFlag($index()); }')
+
+  $('.div_primary_color').attr('data-bind', 'style: { backgroundColor: $data.color, borderColor: $parent.htmlColor(secondary_color) }')
 
   handlers.improved_player_control_colors = function(colors) {
     $('.container').css(colors)
