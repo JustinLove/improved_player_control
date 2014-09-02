@@ -4,17 +4,33 @@
       api.panels && api.panels.devmode && api.panels.devmode.message('improved_player_control_change', n)
     }
   }
+  var def
   for (var i = 1;i <= 10;i++) {
-    action_sets.hacks['control player ' + i] = controlPlayer(i-1)
+    action_sets.hacks['control_player_' + i] = controlPlayer(i-1)
     if (i == 10) {
-      default_keybinds.hacks['control player ' + i] = 'shift+ctrl+0'
+      def = 'shift+ctrl+0'
     } else {
-      default_keybinds.hacks['control player ' + i] = 'shift+ctrl+' + i
+      def = 'shift+ctrl+' + i
+    }
+    api.settings.definitions.keyboard.settings['control_player_' + i] = {
+      title: 'control player ' + i,
+      type: 'keybind',
+      set: 'dev mode',
+      display_group: 'dev mode',
+      display_sub_group: 'improved player control',
+      default: def
     }
   }
 
-  action_sets.hacks['control next player'] = function() {
+  action_sets.hacks.control_next_player = function() {
     api.panels && api.panels.devmode && api.panels.devmode.message('improved_player_control_next')
   }
-  default_keybinds.hacks['control next player'] = 'shift+ctrl+,'
+  api.settings.definitions.keyboard.settings.control_next_player = {
+    title: 'control next player',
+    type: 'keybind',
+    set: 'dev mode',
+    display_group: 'dev mode',
+    display_sub_group: 'improved player control',
+    default: 'shift+ctrl+,'
+  }
 })()
