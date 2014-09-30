@@ -15,8 +15,8 @@
     api.settings.definitions.keyboard.settings['control_player_' + i] = {
       title: 'control player ' + i,
       type: 'keybind',
-      set: 'dev mode',
-      display_group: 'dev mode',
+      set: 'mods',
+      display_group: 'mods',
       display_sub_group: 'improved player control',
       default: def
     }
@@ -28,8 +28,8 @@
   api.settings.definitions.keyboard.settings.control_next_player = {
     title: 'control next player',
     type: 'keybind',
-    set: 'dev mode',
-    display_group: 'dev mode',
+    set: 'mods',
+    display_group: 'mods',
     display_sub_group: 'improved player control',
     default: 'shift+ctrl+,'
   }
