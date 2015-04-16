@@ -1,3 +1,7 @@
+## 1.2.1
+
+- Activate UI based on sandbox option
+
 ## 1.2.0
 
 - Localization changed keyboard groups, move to 'Mods'

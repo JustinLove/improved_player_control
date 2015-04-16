@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "72996",
+  "build": "80462",
   "category": ["sandbox", "ui"],
   "context": "client",
-  "date": "2014/09/30",
+  "date": "2015/04/16",
   "description": "Provide larger hitboxes for switching players, keybinds, and better indication of the selected player.",
   "display_name": "Improved Player Control",
   "forum": "https://forums.uberent.com/threads/rel-improved-player-control.62472/",
@@ -14,6 +14,7 @@
       "coui://ui/mods/improved_player_control/keybinds.js"
     ],
     "live_game": [
+      "coui://ui/mods/improved_player_control/server_sandbox_state.js",
       "coui://ui/mods/improved_player_control/live_game.js"
     ],
     "live_game_devmode": [
@@ -24,6 +25,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.2.0"
+  "version": "1.2.1"
 }
 

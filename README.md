@@ -1,6 +1,6 @@
 # Improved Player Control
 
-Improves the user experience when using the change-control cheat (devmode)
+Improves the user experience when using the sandbox option (devmode)
 
 - The entire player row is a hitbox for changing control
 - Devmode and Sandbox windows are player-colored
