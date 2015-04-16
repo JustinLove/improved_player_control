@@ -1,19 +1,19 @@
 (function() {
   model.updatePlayerControlNext = function() {
     var index = model.playerControlFlags().indexOf(true)
-    console.log(index)
+    //console.log(index)
 
     index += 1
     if (index >= model.playerControlFlags().length) {
       index = 0
     }
 
-    console.log(index)
+    //console.log(index)
     model.updatePlayerControlFlag(index)
   }
 
   model.htmlColor = function(color) {
-    console.log(color)
+    //console.log(color)
     return 'rgb(' + Math.floor(color[0]) + ',' + Math.floor(color[1]) + ',' + Math.floor(color[2]) + ')';
   }
 
