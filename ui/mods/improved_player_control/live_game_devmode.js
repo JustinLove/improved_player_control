@@ -20,6 +20,8 @@
   // current state appears to be pre-ko-foreach
   $('tr:nth-child(2)').attr('data-bind', 'click: function () { $parent.updatePlayerControlFlag($index()); }')
 
+  $('tr:nth-child(2) td:nth-child(2)').attr('data-bind', 'click: function () { $parent.updatePlayerVisionFlag($index()); }, clickBubble: false')
+
   $('.div_primary_color').attr('data-bind', 'style: { backgroundColor: $data.color, borderColor: $parent.htmlColor(secondary_color) }')
 
   handlers.improved_player_control_colors = function(colors) {

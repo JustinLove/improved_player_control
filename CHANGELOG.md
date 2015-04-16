@@ -1,6 +1,7 @@
-## 1.2.1
+## 1.3.0
 
 - Activate UI based on sandbox option
+- Exclude vision checkbox from changing control
 
 ## 1.2.0
 
