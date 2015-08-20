@@ -1,3 +1,7 @@
+## 1.3.1
+
+- Bump compatible build version for 86422 (titans)
+
 ## 1.3.0
 
 - Activate UI based on sandbox option
