@@ -1,3 +1,8 @@
+## 1.4.0
+
+- Force "review mode" off when player is controlled, allowing selection interface
+- Override condition to show commands in action bar
+
 ## 1.3.1
 
 - Bump compatible build version for 86422 (titans)

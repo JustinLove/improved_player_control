@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "86422",
+  "build": "88288",
   "category": ["sandbox", "ui"],
   "context": "client",
-  "date": "2015/08/19",
+  "date": "2015/09/25",
   "description": "Provide larger hitboxes for switching players, keybinds, and better indication of the selected player.",
   "display_name": "Improved Player Control",
   "forum": "https://forums.uberent.com/threads/rel-improved-player-control.62472/",
@@ -25,6 +25,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.3.1"
+  "version": "1.4.0"
 }
 
