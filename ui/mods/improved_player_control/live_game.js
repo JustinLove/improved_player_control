@@ -19,15 +19,30 @@
 
   })
 
+  model.isControllingArmy = ko.computed(function() {
+    return model.playerControlFlags().indexOf(true) != -1
+  })
+
   var live_game_showCommands = model.showCommands
   model.showCommands = ko.computed(function () {
-    if (model.showTimeControls() || model.reviewMode() || model.celestialControlModel.active() || model.playerControlFlags().indexOf(true) == 1)
+    if (model.showTimeControls() || model.reviewMode() || model.celestialControlModel.active() || !model.isControllingArmy())
         return false;
 
     return true;
   });
   // force captured computes to rerun and get new value
   live_game_showCommands.notifySubscribers()
+
+  var live_game_showBuildList = model.showBuildList
+  model.showBuildList = ko.computed(function () {
+      return !model.showTimeControls()
+              && !model.showLanding()
+              && !model.reviewMode()
+              && model.isControllingArmy()
+              && model.celestialControlModel.notActive();
+  });
+  // force captured computes to rerun and get new value
+  live_game_showBuildList.notifySubscribers()
 
   api.Panel.message('', 'inputmap.reload');
 })()

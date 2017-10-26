@@ -1,3 +1,8 @@
+## 1.5.0
+
+- Override condition to show build bar
+- Fix bug with override to command bar
+
 ## 1.4.0
 
 - Force "review mode" off when player is controlled, allowing selection interface
